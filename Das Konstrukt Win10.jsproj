@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>99dfe0d0-5002-4fc7-9367-8c094d17b747</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <TypeScriptToolsVersion>1.6</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TypeScriptJSXEmit>react</TypeScriptJSXEmit>
+    <TypeScriptTarget>ES6</TypeScriptTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0'">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-us</DefaultLanguage>
+    <PackageCertificateThumbprint>7F63AF0812CDB6F853C328B69BB1541A711B36A9</PackageCertificateThumbprint>
+    <PackageCertificateKeyFile>App1_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="App1_StoreKey.pfx" />
+    <Content Include="css\phone.css" />
+    <Content Include="default.html" />
+    <Content Include="game-media\AI-DATA.png" />
+    <Content Include="game-media\ai-level1.png" />
+    <Content Include="game-media\ai-level2.png" />
+    <Content Include="game-media\ai-level3.png" />
+    <Content Include="game-media\automapping-terrain.png" />
+    <Content Include="game-media\automapping.tmx" />
+    <Content Include="game-media\buildmenu.png" />
+    <Content Include="game-media\cinematic.png" />
+    <Content Include="game-media\entities.png" />
+    <Content Include="game-media\font.png" />
+    <Content Include="game-media\font.psd" />
+    <Content Include="game-media\gui.png" />
+    <Content Include="game-media\intro-1.mp3" />
+    <Content Include="game-media\intro-2.mp3" />
+    <Content Include="game-media\intro-3.mp3" />
+    <Content Include="game-media\intro-4.mp3" />
+    <Content Include="game-media\intro-5.mp3" />
+    <Content Include="game-media\intro-6.mp3" />
+    <Content Include="game-media\intro.mp3" />
+    <Content Include="game-media\intro.ogg" />
+    <Content Include="game-media\intro.wav" />
+    <Content Include="game-media\lava.png" />
+    <Content Include="game-media\level-select-screen.png" />
+    <Content Include="game-media\level0.js" />
+    <Content Include="game-media\level0.json" />
+    <Content Include="game-media\level0.png" />
+    <Content Include="game-media\level0.tmx" />
+    <Content Include="game-media\level0.txt" />
+    <Content Include="game-media\level1.js" />
+    <Content Include="game-media\level1.json" />
+    <Content Include="game-media\level1.png" />
+    <Content Include="game-media\level1.tmx" />
+    <Content Include="game-media\level1.txt" />
+    <Content Include="game-media\level2.js" />
+    <Content Include="game-media\level2.json" />
+    <Content Include="game-media\level2.png" />
+    <Content Include="game-media\level2.tmx" />
+    <Content Include="game-media\level2.txt" />
+    <Content Include="game-media\level3.js" />
+    <Content Include="game-media\level3.json" />
+    <Content Include="game-media\level3.png" />
+    <Content Include="game-media\level3.tmx" />
+    <Content Include="game-media\level3.txt" />
+    <Content Include="game-media\levelprops.png" />
+    <Content Include="game-media\map.png" />
+    <Content Include="game-media\msgbox.png" />
+    <Content Include="game-media\music.mp3" />
+    <Content Include="game-media\music.ogg" />
+    <Content Include="game-media\music.pk" />
+    <Content Include="game-media\music.wav" />
+    <Content Include="game-media\parallax.png" />
+    <Content Include="game-media\particles.png" />
+    <Content Include="game-media\plants.png" />
+    <Content Include="game-media\range200.png" />
+    <Content Include="game-media\sfx.mp3" />
+    <Content Include="game-media\sfx.ogg" />
+    <Content Include="game-media\sfx.wav" />
+    <Content Include="game-media\terrain0.png" />
+    <Content Include="game-media\terrain0.tmx" />
+    <Content Include="game-media\terrain1.png" />
+    <Content Include="game-media\terrain1.tmx" />
+    <Content Include="game-media\terrain2.tmx" />
+    <Content Include="game-media\terrain3.tmx" />
+    <Content Include="game-media\terrain_atlas.png" />
+    <Content Include="game-media\tiles.png" />
+    <Content Include="game-media\titlebackground.png" />
+    <Content Include="game-media\titlescreen-OLD.png" />
+    <Content Include="game-media\titlescreen.png" />
+    <Content Include="game-media\tutorial.png" />
+    <Content Include="game-media\tutorial.psd" />
+    <Content Include="game-media\unit1.png" />
+    <Content Include="game-media\unit2.png" />
+    <Content Include="game-media\unit3.png" />
+    <Content Include="game-media\unit4.png" />
+    <Content Include="game-media\_buildlevels.bat" />
+    <Content Include="images\1116x540.png" />
+    <Content Include="images\120x120.png" />
+    <Content Include="images\150x150.png" />
+    <Content Include="images\16x16.png" />
+    <Content Include="images\210x210.png" />
+    <Content Include="images\248x120.png" />
+    <Content Include="images\24x24.png" />
+    <Content Include="images\256x256.png" />
+    <Content Include="images\270x270.png" />
+    <Content Include="images\30x30.png" />
+    <Content Include="images\310x150.png" />
+    <Content Include="images\32x32.png" />
+    <Content Include="images\34x34.png" />
+    <Content Include="images\42x42.png" />
+    <Content Include="images\434x210.png" />
+    <Content Include="images\43x43.png" />
+    <Content Include="images\48x48.png" />
+    <Content Include="images\50x50.png" />
+    <Content Include="images\54x54.png" />
+    <Content Include="images\558x270.png" />
+    <Content Include="images\558x2701.png" />
+    <Content Include="images\620x300.png" />
+    <Content Include="images\70x70.png" />
+    <Content Include="images\868x420.png" />
+    <Content Include="images\90x90.png" />
+    <Content Include="images\BadgeLogo.scale-100.png" />
+    <Content Include="images\BadgeLogo.scale-180.png" />
+    <Content Include="images\big.png" />
+    <Content Include="images\daskonstrukt2.png" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\LockScreenLogo.scale-200.png" />
+    <Content Include="images\logo.scale-100.png" />
+    <Content Include="images\logo.scale-140.png" />
+    <Content Include="images\logo.scale-180.png" />
+    <Content Include="images\logo.scale-80.png" />
+    <Content Include="images\smalllogo.scale-100.png" />
+    <Content Include="images\smalllogo.scale-140.png" />
+    <Content Include="images\smalllogo.scale-180.png" />
+    <Content Include="images\smalllogo.scale-80.png" />
+    <Content Include="images\smalllogo.targetsize-16.png" />
+    <Content Include="images\smalllogo.targetsize-256.png" />
+    <Content Include="images\smalllogo.targetsize-32.png" />
+    <Content Include="images\smalllogo.targetsize-48.png" />
+    <Content Include="images\splash.png" />
+    <Content Include="images\splashscreen.scale-100.png" />
+    <Content Include="images\splashscreen.scale-140.png" />
+    <Content Include="images\splashscreen.scale-180.png" />
+    <Content Include="images\SplashScreen.scale-200.png" />
+    <Content Include="images\Square150x150Logo.scale-100.png" />
+    <Content Include="images\Square150x150Logo.scale-150.png" />
+    <Content Include="images\Square150x150Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.scale-100.png" />
+    <Content Include="images\Square44x44Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.targetsize-16.png" />
+    <Content Include="images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="images\Square44x44Logo.targetsize-48.png" />
+    <Content Include="images\Square70x70Logo.scale-100.png" />
+    <Content Include="images\Square70x70Logo.scale-125.png" />
+    <Content Include="images\Square70x70Logo.scale-150.png" />
+    <Content Include="images\storelogo.scale-100.png" />
+    <Content Include="images\storelogo.scale-140.png" />
+    <Content Include="images\storelogo.scale-180.png" />
+    <Content Include="images\storelogo.scale-200.png" />
+    <Content Include="images\wide.png" />
+    <Content Include="images\wide.scale-100.png" />
+    <Content Include="images\wide.scale-140.png" />
+    <Content Include="images\wide.scale-180.png" />
+    <Content Include="images\wide.scale-80.png" />
+    <Content Include="images\Wide310x150Logo.scale-100.png" />
+    <Content Include="images\Wide310x150Logo.scale-200.png" />
+    <Content Include="index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="js\default.js" />
+    <Content Include="css\default.css" />
+    <Content Include="js\easystar.js" />
+    <Content Include="js\howler.js" />
+    <Content Include="js\jaws.js" />
+    <Content Include="js\TowerGameStarterKit.js" />
+    <Content Include="js\tween.js" />
+    <None Include="Package.StoreAssociation.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="react-winjs.js" />
+    <Content Include="README.md" />
+    <Content Include="WinJS\css\ui-dark.css" />
+    <Content Include="WinJS\css\ui-dark.min.css" />
+    <Content Include="WinJS\css\ui-light.css" />
+    <Content Include="WinJS\css\ui-light.min.css" />
+    <Content Include="WinJS\fonts\Symbols.ttf" />
+    <Content Include="WinJS\js\base.min.js" />
+    <Content Include="WinJS\js\base.min.js.map" />
+    <Content Include="WinJS\js\en-US\ui.strings.js" />
+    <Content Include="WinJS\js\base.js" />
+    <Content Include="WinJS\js\ui.js" />
+    <Content Include="WinJS\js\ui.min.js" />
+    <Content Include="WinJS\js\ui.min.js.map" />
+    <Content Include="WinJS\js\intellisense-setup.js" />
+    <Content Include="WinJS\js\intellisense.js" />
+    <Content Include="WinJS\License.txt" />
+    <Content Include="WinJS\README.md" />
+    <None Include="App1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4a0dddb5-7a95-4fbf-97cc-616d07737a77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.jsproj.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.jsproj.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties WinJS_4js_4ui_1min_1js_1map__JSONSchema="http://json.schemastore.org/config" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
